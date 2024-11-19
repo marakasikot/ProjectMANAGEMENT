@@ -1,0 +1,107 @@
+
+.project-details {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin: 20px;
+    text-align: left;
+    max-width: 800px; /* Ограничиваем ширину для улучшения читабельности */
+    margin-left: auto;
+    margin-right: auto; /* Центрирование блока */
+}
+
+.project-details h2 {
+    color: #333;
+    margin-bottom: 16px; /* Добавляем отступ после заголовка */
+}
+
+.project-details p,
+.project-details li {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px; /* Добавляем немного отступа после каждого параграфа */
+}
+
+.project-details .project-metadata {
+    display: flex;
+    justify-content: space-between; /* Распределяем метаданные по всей ширине */
+    align-items: center;
+    margin-bottom: 20px; /* Отступ после блока метаданных */
+}
+
+.project-details ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px; /* Отступ перед списком задач */
+}
+
+.project-details li {
+    padding: 8px;
+    background: #f9f9f9;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 8px; /* Добавляем отступ между задачами */
+    cursor: pointer; /* Указатель курсора для наведения */
+    transition: background 0.3s; /* Плавное изменение фона при наведении */
+}
+
+.project-details li:last-child {
+    border-bottom: none;
+}
+
+.project-details li:hover {
+    background: #f2f2f2;
+}
+
+/* Стили для кнопок */
+.project-details button {
+    padding: 8px 16px;
+    margin-right: 10px; /* Отступ между кнопками */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Стили для поля ввода новой задачи */
+.project-details .add-task {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.project-details .add-task input {
+    flex: 1; /* Занимать всё доступное пространство */
+    padding: 8px;
+    margin-right: 10px; /* Отступ между инпутом и кнопкой */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.project-details .add-task button {
+    background-color: #5cb85c; /* Зелёный цвет кнопки */
+    color: white;
+}
+
+.project-details .add-task button:hover {
+    background-color: #4cae4c; /* Немного темнее при наведении */
+}
+
+/* Стили для режима редактирования */
+.project-details .edit-mode {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-details .edit-mode input,
+.project-details .edit-mode textarea,
+.project-details .edit-mode select {
+    margin-bottom: 10px; /* Отступ для полей формы */
+}
+
+.project-details .edit-mode button {
+    margin-top: 10px; /* Отступ сверху для кнопок */
+}
+
+.btn-addtask{
+    margin: 0px 0px 0px 10px;
+}
