@@ -1,0 +1,21 @@
+config:
+  target: 'http://localhost:3001'
+  phases:
+    - duration: 120
+      arrivalRate: 20
+      name: "Warm up phase"
+    - duration: 180
+      arrivalRate: 50
+      rampTo: 100
+      name: "High load phase"
+
+scenarios:
+  - flow:
+    - get:
+        url: "/"
+    - think: 1
+    - get:
+        url: "/about"
+    - think: 1
+    - get:
+        url: "/contact"
